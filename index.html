@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="portfolio.css">
+  <title></title>
+</head>
+
+<body>
+  <section class="nav">
+    <nav class="navbar">
+<h1>AID Portfolio</h1>
+      <ul>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </section>
+  <section id="dashboard">
+    <h2> Welcome to my portfolio </h2> <br/>
+    <button> Explore </button>
+  </section>
+  
+  <div class="pic">
+    <img width="150px" height="150px auto" src="/profile-pic.jpg" alt="profile-pic" class="profile-picture"></div></br>
+    <h2>About Me</h2>
+    <p><strong>I'm Abdulbasit Lamidi and I'm a Graphic Designer and a Passionate Frontend Website Developer</strong> <br>I help individual,Businesses Organisation and Company to craft and build real time responsive website that stooth their ideas about there business thereby bring it to life.</p>
+  </div>
+  <div id="projects">
+    <h2> MY PROJECTS </h2>
+     <P>As a Beginner I strongly Believe That
+     You Don't Have to 
+     Wait Until you Know All Just Start Building With The Knowledge You Have, Keep learning and Stay Consistent "Beware that one of the greatest enemy of man is Procrastination".So you have to fight the fear and come out of your shadow.</P>
+  </div>
+      <div class="pro">
+        <h4 style="color:#fff">Counter</h4>
+        <p>Tapping the count makes the number start counting and when reset it goes back to zero. <br>
+            <button onclick="window.location.href ='/Extension /count.html'"class="link-btn"> check it</button></p>
+      </div>
+            <div class="pro">
+        <h4 style="color:#fff">My-To-Do-List</h4>
+        <p>A simple To-Do-List that can help by planning task for a day it's a beginner project.<br>
+             <button onclick="window.location.href ='/Extension /my to do list.html'"class="link-btn"> check it</button></p>
+      </div>
+      <div class="pro">
+        <h4 style="color:#fff">Background Changer</h4>
+        <p>Tapping each buttons change the background color with name of the color inscribed on the button unless random that changes to different varieties of colors.<br>
+             <button onclick="window.location.href ='/Extension /color.html'"class="link-btn"> check it</button></p>
+      </div>
+            <div class="pro">
+        <h4 style="color:#fff">Loading Animation</h4>
+        <p>This is two simple loading page click each button to view.<br>
+      <button onclick="window.location.href ='/Extension /loading.html'" class="link-btn" > Check one </button> <span></span><button onclick="window.location.href ='/Extension /loading animation.html'" class="link-btn" > Check Two </button> </p>
+      </div>
+            <div class="pro">
+        <h4 style="color:#fff">Simple Freelance Platform</h4>
+        <p>As the name imply a simple beginners friendly freelance projects .<br>
+             <button onclick="window.location.href ='/Extension /freelance.html'" class="link-btn"> check it</button>
+       </p>
+      </div>
+  </div>
+   <section style="color: white" >
+     <h4>My Experience </h4>
+     <ul>
+       <li>HTML(HyperTextMarkupLanguage)</li>
+       <li>CSS(Cascading Style Sheet)</li>
+       <li>JavaScript And DOM(Document Object Model) Manipulation</li>
+     </ul>
+   </section>
+  
+  <section class="contact">
+    <h2>Contact</h2>
+    <form class="message">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea>write your message</textarea>
+      <br /> <button onclick="submit">Send Message</button>
+      
+    </form>
+  </section>
+  <script>
+        function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({behavior:'smooth'});
+  </script>
+</body>
+
+</html>

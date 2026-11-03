@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+        body{
+            background: goldenrod;
+            padding: 10px;
+            max-width= 400px;
+            margin: 50px auto;
+            input{
+            background: #ccc;
+            padding: 16px;
+            width: 70%;
+            border-radius: 6px;
+            color: #222;
+            border: 2px solid #ffff;
+                
+            }
+            li{
+                background: #f1f1f1;
+                padding: 10px;
+                margin-top: 8px;
+                border-radius: 6px;
+                display: flex;
+                justify-content: space-between;
+            }
+            #addBtn{
+            background: #9a15ff;
+            cursor: pointer;
+            padding: 13px 16px;
+            border-radius: 10px;
+            color: #fff;
+            border: 2px solid #5000ff;
+            }
+            .delete {
+            background: #ff001f;
+             cursor: pointer;
+            padding: 3px 8px;
+            border-radius: 4px;
+            color: #fff;
+            border: none;   
+    </style>
+</head>
+<body>
+    <h2 style="color:#fff;">My To-Do List </h2>
+    <input id="taskInput" placeholder="Create your task...">
+    <button id="addBtn">Add</button>
+    <ul id="taskList"></ul>
+   <script>
+       let enter = document.getElementById('taskInput');
+        let addBtn = document.getElementById('addBtn');
+         let list = document.getElementById('taskList');
+         addBtn.addEventListener('click' , function () {
+             let text = taskInput.value;
+             if(text===''){
+                 return;
+             }
+             let li = document.createElement('li');
+         li.textContent = text;
+  let delBtn = document.createElement('button');
+       delBtn.textContent= 'X';
+       delBtn.className = 'delete';
+       delBtn.addEventListener('click' , function () {
+           li.remove();
+       });
+       li.appendChild(delBtn);
+         taskList.appendChild(li);
+         taskInput.value = '';
+         });
+   </script>
+</body>
+</html>

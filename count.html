@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+        body{
+            background: goldenrod;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            align-items: center;
+        }
+        .container{
+            background: #aaf4ff;
+            box-shadow: 0px 3px 10px #d5f4ff;
+            padding: 50px ;
+            display: flex;
+            border-radius: 20px;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #count{
+        background: #fff;
+            color: red;
+            font-size: 40px;
+            text-align: center;
+        }
+         
+         
+        #addBtn{
+            background-color: #1523ff;
+            cursor: pointer;
+            border-radius: 7px;
+                color: white;
+                padding: 10px;
+            
+        }
+          #resetBtn{
+            background-color: #ff000a;
+            cursor: pointer;
+            border-radius: 7px;
+                color: white;
+                padding: 10px;
+               margin-top: 10px;
+            
+        }  
+        .green{
+             color: green !important;}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2 id="count">0</h2>
+    <button id ="addBtn">Count</button>
+    <button id="resetBtn">Restart</button>
+    </div>
+    <script>
+        let display = document.getElementById('count');
+           let addBtn = document.getElementById('addBtn');
+              let resetBtn = document.getElementById('resetBtn');
+      let number = 0;
+      addBtn.addEventListener('click' , function (){
+          number++;
+          display.textContent = number;
+          if(number >= 5) {
+              display.classList.add ('green');
+          } 
+          });
+            resetBtn.addEventListener('click' , function () {
+          
+          number= 0;
+          display.textContent = number;
+          display.classList.remove  ('green');
+          });
+      
+      
+        
+    </script>
+</body>
+</html>

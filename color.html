@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+        body{
+            display: flex;
+            
+            align-items: center;
+           height: 100vh;
+           
+        }
+        #orange{
+            background: #ff6915;
+            cursor: pointer;
+            margin: 10px;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            color: #fff;
+            border: 2px solid #ff0a00;
+        }
+         #goldenrod{
+            background: goldenrod;
+            cursor: pointer;
+             margin: 10px;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            color: #fff;
+            border: 2px solid #fff155;
+        }
+         #purple{
+            background: #9a15ff;
+            cursor: pointer;
+             margin: 10px;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            color: #fff;
+            border: 2px solid #5000ff;
+        }
+         #random{
+            background: #189c00;
+            cursor: pointer;
+             margin: 10px;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            color: #fff;
+            border: 2px solid #00decc;
+        }
+    </style>
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="goldenrod">Goldenrod</button>
+    <button id="purple">Purple</button>
+    <button id="random">Random</button>
+    <script>
+        let orange = document.getElementById('orange');
+          let goldenrod = document.getElementById('goldenrod');
+            let purple = document.getElementById('purple');
+              let random = document.getElementById('random');
+     orange.addEventListener('click' , function () {
+         document.body.style.background= '#ff6915';
+     });
+      goldenrod.addEventListener('click' , function () {
+         document.body.style.background= 'goldenrod';
+     });
+      purple.addEventListener('click' , function () {
+         document.body.style.background= '#9a15ff';
+         
+     });
+      random.addEventListener('click' , function () {
+      let r = Math.floor(Math.random()*55);
+        let g = Math.floor(Math.random()*255);
+          let b = Math.floor(Math.random()*256);
+         document.body.style.background= `rgb(${r} ${g} ${b})`;
+     });
+    </script>
+</body>
+</html>
